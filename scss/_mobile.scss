@@ -1,0 +1,1251 @@
+//Widescreens
+
+@include mediaXl {
+
+    main {
+      &#home {
+        h3 {
+          margin-top: 20px;
+    
+        }
+      }
+    }
+  
+    //about
+  
+    .split{
+      margin: 25px 50px 0px 50px;
+    }
+    .about-heading{
+      margin-left: 110px;
+    }
+  
+    .bio{
+      margin-left: 65px;
+      margin-right: 0px;
+      font-size: 17px;
+      p{
+        margin-bottom: 15px;
+      }
+    }
+  
+    .image-info{
+      margin-left: 15px;
+      margin-right: 0px;
+    }
+    
+    //projects
+  .containerw1{
+      
+      margin:20px 0 0px 95px;
+  
+    .work{
+  
+  
+      p{
+        margin: 10px 10px 25px 20px;
+      }
+      a{
+          
+        margin-right: 15px;
+        float: right;  
+      }
+    }
+  }
+  
+  .containerw2{
+  
+    margin-left: 95px;
+  }
+  
+  //Resume Page
+  .resume-heading{
+  
+    h1{
+  
+      margin-left: 110px;
+    }
+  
+  }
+  
+  .containerr1{
+    
+    width: 400px;
+    margin-left: 110px;
+    
+  }
+  .containerr2{
+    
+    width: 540px;
+    padding-right: 60px;
+    margin-left: 30px;
+  
+  }
+  
+  #headcontact{
+    margin-left: 280px;
+  }
+  
+  }
+  
+  //Desktop & Latops
+  @include mediaLg {
+    html{
+      height: 100%;
+    }
+  
+    body{
+      height: auto;
+    }
+    .botdown{
+      background: #767676;
+      width: 100%;
+      height: 180px;
+      position: absolute;
+      margin-top: -10px;
+    }
+    .botdown2{
+      width: 100%;
+      height: 300px;
+      margin: 0;
+      position: absolute;
+    }
+    main {
+      &#home {
+        h3 {
+          margin-top: 50px;
+    
+        }
+      }
+    }
+    .close {
+      .btn-line {
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(8px, -6px);
+        }
+      }
+    
+    }
+    .menu-btn {
+      top: 30px;
+      right: 35px;
+    }
+    .btn-line {
+      width: 40px;
+      height: 3px;
+      border-radius: 20px;
+      margin: 0 0 8px 0;
+      background: set-text-color($primary-color);
+      @include easeOut;
+    }
+    .menu {
+      padding: 0;
+      top: -20px;
+      margin: 0;
+    
+      #contact{
+        display: block;
+      }
+    
+      &-nav {
+        margin: 0;
+        padding: 0;
+        height: 110vh;
+        transform: translate3d(150%,0, 0);
+        @include easeOut;
+    
+        &.show {
+          //Slide in
+          transform: translate3d(50%, 0, 0);
+        }
+      }
+      .nav-item {
+        transform: translate3d(20%, 0, 0);
+        @include easeOut;
+        &.show {
+          //Slide   
+          transform: translate3d(10%,0 ,0);
+        }
+       
+      }
+    
+      .nav-link {
+        bottom: 100px;
+        font-size: 60px;
+        line-height: 100px;
+      }
+    }
+    
+    
+    h1,
+    h2,
+    h3 {
+      margin-left: 30px;
+    
+      &.fm-heading {
+        font-size: 78px;
+      }
+    
+      &.lg-heading {
+        font-size: 78px;
+        padding: 0rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      &.sm-heading {
+        font-size: 78px;
+      }
+    }
+    
+    .type{
+      padding: 25px;
+      .box{   
+        display: none;
+      }
+    }
+    .vk{
+      
+      width: 75px;
+    }
+    .copy{
+      left: -45px;
+      bottom: 80px;
+      position: absolute;
+      .copyright{
+        font-size: 19px;
+      }
+    }
+    .copy2{
+      position: absolute;
+      bottom: -400px;
+      margin-top: 200px;
+      .copyright{
+        font-size: 19px;
+      }
+    }
+    
+    .icons {
+      bottom: 15px;
+      padding-right: 25px;
+      position: absolute;
+    }
+    .icons2{
+      position: absolute;
+      bottom: -460px;
+      padding-right: 20px;
+    }
+    .icons3{
+      display: block;
+      position: absolute;
+      bottom: 50px;
+      
+    
+        img {
+          padding: 0.3rem; 
+      }
+    }
+    .socials{
+      width: 48px;
+    }
+  
+      //About page
+  .about{
+    margin: 0;
+    height: 1250px;
+  }
+  .about2{
+    margin: 0;
+    height: 1350px;
+  }
+  .about3{
+    margin: 0;
+    height: 1450px;
+  }
+  .type2{
+    padding: 30px;
+    .box2{
+      display: none;
+    }
+  }
+  
+  .about-heading{
+    margin-left: 35px;
+    margin-top: 35px;
+    font-size: 50px;
+  }
+  .split{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  
+  .bio{
+    margin-left: 35px;
+    margin-right: 15px;
+    font-size: 18px;
+    p{
+      margin-bottom: 35px;
+    }
+  }
+  .bio-image{
+    height: 450px;
+  }
+  .image-info{
+    margin-left: 35px;
+  }
+  
+  //Projects
+  .containerw1{
+    flex-direction: column;
+    margin:10px 0 0px 25px;
+    .work{
+      border-width: 2px;
+      margin: 10px;
+      width: 420px;
+      height: 200px;
+      h5{
+        font-size: 22px;
+        margin: 15px 15px 20px 15px;
+      }
+      p{
+        font-size: 19px;
+        margin: 10px 10px 30px 15px;
+      }
+      a{
+        font-size: 16px;
+        margin-right: 15px;
+        position: relative;
+        top: 10px;
+      }
+    }
+  }
+  .containerw2{
+    flex-direction: column;
+    margin-left: 25px;
+    .work{
+      border-width: 2px;
+      margin: 10px;
+      width: 420px;
+      height: 200px;
+    
+    h5{
+      font-size: 22px;
+      margin: 15px 15px 20px 15px;
+    }
+    p{
+      font-size: 19px;
+      margin: 10px 10px 30px 15px;
+    }
+    a{
+      font-size: 16px;
+      margin-right: 20px;
+      position: relative;
+      top: 10px;
+    }
+  
+  }
+  }
+  
+  //Resume Page
+  .resume-heading{
+  
+    margin-top: 35px;
+    height: 100px;
+    
+    h1{
+      font-size: 50px;
+      margin-left: 30px;
+    }
+    #download{
+      margin: 25px 35px 0 0;
+    }
+    .downbutton{
+      width: 38px;
+    }
+  }
+  
+  .containerr1{
+    float: left;
+    width: 600px;
+    margin-left: 30px;
+   .worktitle{
+     font-size: 26px;
+     margin: 15px 0 15px 0;
+   }
+   
+   h4{
+     margin:8px 0 8px 0;
+     font-size: 20px;
+   }
+   h3{
+    margin:5px 0 5px 0;
+    font-size: 17px;
+  }
+   p{
+     font-size: 17px;
+     margin: 5px 0 25px 0;
+   }
+    
+  }
+  .containerr2{
+    float: left;
+    width: 600px;
+    padding-right: 0;
+    margin-left: 30px;
+  
+    .worktitle{
+      font-size: 26px;
+      margin: 20px 0 20px 0;
+    }
+    
+    h4{
+      margin:5px 0 5px 0;
+      font-size: 20px;
+    }
+    p{
+      font-size: 17px;
+      margin: 0;
+      
+    }
+  }
+  //Contact Page
+  .mailbot{
+    left: 35px;
+  }
+  
+  .form-style-1 {
+      margin-left: 35px;
+      max-width: 600px;
+      padding: 10px 0px 15px 0px;
+  
+    li {
+      margin: 15px 0 0 0;
+    }
+    li#pp{
+      margin: 0;
+    }
+  
+    label{
+      margin:15px 0 0px 0;
+      font-size: 16px;
+    }
+  
+    input#button{
+      width: 150px;
+      height: 40px;
+      font-size: 18px;
+    }
+    .field-divided{
+      width: 49%;
+    }
+    textarea{
+      min-width: 100px;
+      max-width: 600px;
+    }
+  
+    .pfirst{
+      display: inline-block;
+    }
+    .pmfirst{
+      display: none;
+    }
+    .psecond{
+      font-size: 11px;
+      margin: 5px 0 15px 0px;
+      display:inline-block;
+      width: 49%;
+    }
+    .sentb{
+      width:40%;
+      }
+    #simpleToast {
+     min-width: 25px; 
+      margin-top: 1px;
+      padding: 11px; 
+    }
+  
+  }
+
+  }
+  
+  //Tablets & Small Laptops
+  @include mediaMd {
+    html{
+      height: 100%;
+    }
+  
+    body{
+      height: auto;
+    }
+    .botdown{
+      background: #767676;
+      width: 100%;
+      height: 180px;
+      position: absolute;
+      margin-top: -10px;
+    }
+    .botdown2{
+      width: 100%;
+      height: 300px;
+      position: absolute;
+    }
+    main {
+      &#home {
+        h3 {
+          margin-top: 50px;
+    
+        }
+      }
+    }
+    .close {
+      .btn-line {
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -4px);
+        }
+      }
+    
+    }
+    .menu-btn {
+      top: 25px;
+      right: 30px;
+    }
+    .btn-line {
+      width: 35px;
+      height: 3px;
+      border-radius: 20px;
+      margin: 0 0 6px 0;
+      background: set-text-color($primary-color);
+      @include easeOut;
+    }
+    .menu {
+      padding: 0;
+      top: -20px;
+      margin: 0;
+    
+      #contact{
+        display: block;
+      }
+    
+      &-nav {
+        margin: 0;
+        padding: 0;
+        height: 110vh;
+        transform: translate3d(150%,0, 0);
+        @include easeOut;
+    
+        &.show {
+          //Slide in
+          transform: translate3d(50%, 0, 0);
+        }
+      }
+      .nav-item {
+        transform: translate3d(20%, 0, 0);
+        @include easeOut;
+        &.show {
+          //Slide   
+          transform: translate3d(10%,0 ,0);
+        }
+       
+      }
+    
+      .nav-link {
+        bottom: 120px;
+        font-size: 48px;
+        line-height: 100px;
+      }
+    }
+    
+    
+    h1,
+    h2,
+    h3 {
+      margin-left: 30px;
+    
+      &.fm-heading {
+        font-size: 62px;
+      }
+    
+      &.lg-heading {
+        font-size: 62px;
+        padding: 0rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      &.sm-heading {
+        font-size: 62px;
+      }
+    }
+    
+    .type{
+      padding: 25px;
+      .box{   
+        display: none;
+      }
+    }
+    .vk{
+      
+      width: 70px;
+    }
+    .copy{
+      left: -35px;
+      bottom: 80px;
+      position: absolute;
+      .copyright{
+        font-size: 17px;
+      }
+    }
+    .copy2{
+      position: absolute;
+      bottom: -400px;
+      margin-top: 200px;
+      .copyright{
+        font-size: 15px;
+      }
+    }
+    
+    .icons {
+      bottom: 20px;
+      padding-right: 25px;
+      position: absolute;
+    }
+    .icons2{
+      position: absolute;
+      bottom: -460px;
+      padding-right: 20px;
+    }
+    .icons3{
+      display: block;
+      position: absolute;
+      bottom: 50px;
+      
+    
+        img {
+          padding: 0.3rem; 
+      }
+    }
+    .socials{
+      width: 45px;
+    }
+    
+    //About page
+  .about,.about3{
+    margin: 0;
+    height: 1250px;
+  }
+  .about2{
+    margin: 0;
+    height: 100%;
+  }
+  .type2{
+    padding: 20px;
+    .box2{
+      display: none;
+    }
+  }
+  
+  .about-heading{
+    margin-left: 25px;
+    margin-top: 35px;
+    font-size: 55px;
+  }
+  .split{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  
+  .bio{
+    margin-left: 30px;
+    margin-right: 15px;
+    font-size: 17px;
+    p{
+      margin-bottom: 35px;
+    }
+  }
+  .bio-image{
+    height: 450px;
+  }
+  .image-info{
+    margin-left: 25px;
+  }
+  
+  //Projects
+  .containerw1{
+    flex-direction: column;
+    margin:10px 0 0px 15px;
+    .work{
+      border-width: 2px;
+      margin: 10px;
+      width: 320px;
+      height: 170px;
+      h5{
+        font-size: 18px;
+        margin: 10px 10px 15px 10px;
+      }
+      p{
+        font-size: 16px;
+        margin: 10px 10px 10px 10px;
+      }
+      a{
+        font-size: 15px;
+        margin-right: 15px;
+        position: relative;
+        top: 30px;
+      }
+  
+    }
+  }
+  .containerw2{
+    flex-direction: column;
+    margin-left: 15px;
+    .work{
+      border-width: 2px;
+      margin: 10px;
+      width: 320px;
+      height: 170px;
+    
+    h5{
+      font-size: 18px;
+      margin: 10px 10px 15px 10px;
+    }
+    p{
+      font-size: 16px;
+      margin: 10px 10px 10px 10px;
+    }
+    a{
+      font-size: 15px;
+      margin-right: 15px;
+      position: relative;
+      top: 30px;
+    }
+  
+  }
+  }
+  
+  //Resume Page
+  .resume-heading{
+  
+    margin-top: 35px;
+    height: 100px;
+    
+    h1{
+      font-size: 55px;
+      margin-left: 30px;
+    }
+    #download{
+      margin: 15px 30px 0 0;
+    }
+    .downbutton{
+      width: 40px;
+    }
+  }
+  
+  .containerr1{
+    float: left;
+    width: 400px;
+    margin-left: 30px;
+   .worktitle{
+     font-size: 26px;
+     margin: 15px 0 15px 0;
+   }
+   
+   h4{
+     margin:8px 0 8px 0;
+     font-size: 18px;
+   }
+   h3{
+    margin:5px 0 5px 0;
+    font-size: 15px;
+  }
+   p{
+     font-size: 15px;
+     margin: 5px 0 25px 0;
+   }
+    
+  }
+  .containerr2{
+    float: left;
+    width: 400px;
+    padding-right: 0;
+    margin-left: 30px;
+  
+    .worktitle{
+      font-size: 26px;
+      margin: 20px 0 20px 0;
+    }
+    
+    h4{
+      margin:5px 0 5px 0;
+      font-size: 18px;
+    }
+    p{
+      font-size: 15px;
+      margin: 0;
+      
+    }
+  }
+  //Contact Page
+  .mailbot{
+    left: 35px;
+  }
+  
+  .form-style-1 {
+      margin-left: 35px;
+      max-width: 355px;
+      padding: 10px 0px 15px 0px;
+  
+    li {
+      margin: 15px 0 0 0;
+    }
+    li#pp{
+      margin: 0;
+    }
+  
+    label{
+      margin:15px 0 0px 0;
+      font-size: 20px;
+    }
+  
+    input#button{
+      width: 150px;
+      height: 50px;
+      font-size: 18px;
+    }
+    .field-divided{
+      width: 100%;
+    }
+    textarea{
+      min-width: 100px;
+      max-width: 600px;
+    }
+  
+    .pfirst{
+      display: none;
+    }
+    .pmfirst{
+      font-size: 12px;
+      margin: 5px 0 15px 0px;
+      display:flex;
+     
+    }
+    .psecond{
+      font-size: 12px;
+      margin: 5px 0 15px 0px;
+      display:flex;
+      width: 49%;
+    }
+    .sentb{
+      width:70%;
+      }
+    #simpleToast {
+     min-width: 25px; 
+      margin-top: 2px;
+      padding: 16px; 
+    }
+  
+  }
+  
+  
+  }
+  
+  
+  
+  
+  //Smartphones
+  @include mediaSm{
+  
+    html{
+      height: 100%;
+    }
+  
+    body{
+      height: auto;
+    }
+    
+    .botdown{
+      background: #767676;
+      width: 100%;
+      height: 160px;
+      position: absolute;
+      margin-top: -10px;
+    }
+    .botdown2{
+      width: 100%;
+      height: 300px;
+      position: absolute;
+    }
+  
+    .menu-btn {
+      top: 20px;
+      right: 25px;
+    }
+    .btn-line {
+      width: 30px;
+      height: 3px;
+      border-radius: 15px;
+      margin: 0 0 6px 0;
+      background: set-text-color($primary-color);
+      @include easeOut;
+    }
+  
+  main {
+  
+    
+    &#home {
+      h3 {
+        margin-top: 30px;
+  
+      }
+    }
+  }
+  .close {
+    .btn-line {
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -4px);
+      }
+    }
+  
+  }
+  .menu {
+    padding: 0;
+    top: -20px;
+    margin: 0;
+  
+    #contact{
+      display: block;
+    }
+  
+    &-nav {
+      margin: 0;
+      padding: 0;
+      height: 130vh;
+      transform: translate3d(150%,0, 0);
+      @include easeOut;
+  
+      &.show {
+        //Slide in
+        transform: translate3d(50%, 0, 0);
+      }
+    }
+    .nav-item {
+      transform: translate3d(20%, 0, 0);
+      @include easeOut;
+      &.show {
+        //Slide   
+        transform: translate3d(10%,0 ,0);
+      }
+     
+    }
+  
+    .nav-link {
+      bottom: 150px;
+      font-size: 40px;
+      line-height: 90px;
+      text-decoration: none;
+      color: set-text-color($primary-color);
+      @include easeOut;
+  
+      &:hover {
+        color: #767676;
+      }
+    }
+  }
+  
+  
+  h1,
+  h2,
+  h3 {
+    margin-left: 20px;
+  
+    &.fm-heading {
+      font-size: 40px;
+    }
+  
+    &.lg-heading {
+      font-size: 40px;
+      padding: 0rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    &.sm-heading {
+      font-size: 40px;
+    }
+  }
+  
+  .type{
+    padding: 20px;
+    .box{   
+      display: none;
+    }
+  }
+  .vk{
+    width: 60px;
+  }
+  .copy{
+    left: -35px;
+    bottom: 80px;
+    position: absolute;
+    .copyright{
+      font-size: 15px;
+    }
+  }
+  .copy2{
+    position: absolute;
+    bottom: -400px;
+    margin-top: 200px;
+    .copyright{
+      font-size: 15px;
+    }
+  }
+  
+  .icons {
+    bottom: 20px;
+    padding-right: 20px;
+    position: absolute;
+  }
+  .icons2{
+    position: absolute;
+    bottom: -460px;
+    padding-right: 20px;
+  }
+  .icons3{
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    
+  
+      img {
+        padding: 0.3rem; 
+    }
+  }
+  
+  .socials{
+    width: 38px;
+  }
+  
+  //About page
+  .about{
+    margin: 0;
+    height: 1250px;
+  }
+  .about2{
+    margin: 0;
+    height: 100%;
+  }
+  .type2{
+    padding: 20px;
+    .box2{
+      display: none;
+    }
+  }
+  
+  .about-heading{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  .split{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  
+  .bio{
+    margin-left: 25px;
+    margin-right: 15px;
+    font-size: 16px;
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  .bio-image{
+    height: 350px;
+  }
+  .image-info{
+    margin-left: 20px;
+  }
+  
+  //Projects Page
+  .containerw1{
+    flex-direction: column;
+    margin:10px 0 0px 5px;
+    .work{
+      border-width: 1px;
+      margin: 20px;
+      width: 250px;
+      height: 150px;
+      h5{
+        font-size: 18px;
+        margin: 10px 10px 15px 10px;
+      }
+      p{
+        font-size: 14px;
+        margin: 10px 10px 10px 10px;
+      }
+      a{
+        font-size: 12px;
+        margin-right: 20px;
+        position: relative;
+        top: 5px;
+      }
+      .uplink{
+        top: 25px;
+      }
+  
+    }
+  }
+  .containerw2{
+    flex-direction: column;
+    margin-left: 5px;
+    .work{
+      border-width: 1px;
+      margin: 20px;
+      width: 250px;
+      height: 150px;
+    
+    h5{
+      font-size: 18px;
+      margin: 10px 10px 15px 10px;
+    }
+    p{
+      font-size: 14px;
+      margin: 10px 10px 10px 10px;
+    }
+    a{
+      font-size: 12px;
+      margin-right: 15px;
+      position: relative;
+      top: 5px;
+      
+    }
+    .uplink{
+      top: 25px;
+    }
+  
+  }
+  }
+  //Resume Page
+  .resume-heading{
+  
+    height: 50px;
+    
+    h1{
+      font-size: 30px;
+      margin-left: 20px;
+    }
+    #download{
+      margin: 10px 23px 0 0;
+    }
+    .downbutton{
+      width: 25px;
+    }
+  }
+  
+  .containerr1{
+    float: left;
+    width: 320px;
+    margin-left: 20px;
+   .worktitle{
+     font-size: 20px;
+     margin: 15px 0 15px 0;
+   }
+   
+   h4{
+     margin:5px 0 5px 0;
+     font-size: 15px;
+   }
+   h3{
+    margin:5px 0 5px 0;
+    font-size: 14px;
+  }
+   p{
+     font-size: 14px;
+     margin: 5px 0 25px 0;
+   }
+    
+  }
+  .containerr2{
+    float: left;
+    width: 320px;
+    padding-right: 0;
+    margin-left: 20px;
+  
+    .worktitle{
+      font-size: 18px;
+      margin: 15px 0 15px 0;
+    }
+    
+    h4{
+      margin:5px 0 5px 0;
+      font-size: 14px;
+    }
+    p{
+      font-size: 14px;
+      margin: 0;
+      
+    }
+  }
+  
+  //Contact Page
+  .mailbot{
+    left: 20px;
+  }
+  
+  .form-style-1 {
+      margin-left: 20px;
+      max-width: 300px;
+      padding: 5px 0px 10px 0px;
+  
+    li {
+      margin: 10px 0 0 0;
+    }
+    li#pp{
+      margin: 0;
+    }
+  
+    label{
+      margin:15px 0 0px 0;
+      font-size: 15px;
+    }
+  
+    input#button{
+      width: 130px;
+      height: 35px;
+      font-size: 15px;
+    }
+    .field-divided{
+      width: 100%;
+    }
+    textarea{
+      min-width: 100px;
+      max-width: 600px;
+    }
+  
+    .pfirst{
+      display: none;
+    }
+    .pmfirst{
+      font-size: 11px;
+      margin: 5px 0 15px 0px;
+      display:flex;
+     
+    }
+    .psecond{
+      font-size: 11px;
+      margin: 5px 0 15px 0px;
+      display:flex;
+      width: 49%;
+    }
+    .sentb{
+      width:75%;
+      }
+    #simpleToast { 
+     min-width: 25px; 
+      margin-top: 2px;
+      padding: 9px; 
+    }
+  
+  }
+  
+  }//end
+  

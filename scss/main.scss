@@ -1,0 +1,596 @@
+@import "_config";
+@import "_menu";
+
+$t: 1s;
+$d: 0.08em;
+$n: 3;
+$e: cubic-bezier(0.86, 0, 0.07, 1);
+$front: white;
+$back: $secondary-color;
+
+* {
+  box-sizing: border-box;
+  }
+
+@font-face {
+  font-family: 'SpaceG';
+  src:  url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+  font-weight:normal;
+}
+@font-face {
+  font-family: 'SpaceGl';
+  src:  url('/fonts/SpaceGrotesk-Light.woff2') format('woff2');
+  font-weight:lighter;
+}
+@font-face {
+  font-family: 'SpaceGb';
+  src:  url('/fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+  font-weight:bold;
+}
+:root {
+  --animate-delay: 0.7s;
+}
+
+
+body {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: auto;
+  margin: 0;
+  font-family: "SpaceGb";
+  line-height: 1.5;
+}
+
+
+
+//Headings
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  margin-left: 340px;
+
+  &.fm-heading {
+    left: 390px;
+    font-size: 106px;
+    margin-bottom: -1rem;
+    padding: 0rem;
+    
+  }
+
+  &.lg-heading {
+    font-size: 104px;
+    padding: 0rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  &.sm-heading {
+    font-size: 104px;
+    margin-top: 10px;
+    padding: 0;
+    line-height: normal;
+  }
+}
+
+a {
+  
+  text-decoration: none;
+  color: set-text-color($primary-color);
+}
+
+.type{
+  position: relative;
+  z-index: 2;
+  padding: 45px;
+
+  .box{
+    
+    position: absolute;
+    right: 0;
+    border: 2px #fff solid;
+    width: 200px;
+    height: 58px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+    cursor: pointer;
+    @include easeOut();
+    a{
+      font-size: 22px;
+    }
+    &:hover {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+      @include easeOut();
+    }
+    
+  }
+}
+.type2{
+
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  .box2{
+    margin-right: 25px;
+    position: absolute;
+    right: 0;
+    border: 2px #fff solid;
+    width: 200px;
+    height: 58px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+    cursor: pointer;
+    @include easeOut();
+    &:hover {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+      @include easeOut();
+    }
+    a{
+      font-size: 22px;
+    }
+   
+    
+  }
+}
+
+
+
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+
+
+main {
+  
+ 
+
+
+  &#home {
+    overflow: hidden;
+    h3 {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      
+    }
+  }
+
+  .botdown{
+    background: #767676;
+    width: 100%;
+    height: 160px;
+    position: relative;
+  }
+  .botdown2{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+  }
+}
+.icons, .icons2 {
+  
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+  padding-right: 50px;
+  z-index: 2;
+
+  img {
+  padding: 0.4rem; 
+  @include easeOut();
+  &:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    @include easeOut();
+  }
+}
+
+}
+.icons3{
+  display: none;
+}
+
+.copy, .copy2{
+  position: absolute;
+  cursor: default;
+  left: -25px;
+  bottom: 100px;
+  z-index: 3;
+  transform: rotate(-90.0deg);
+  
+  .copyright{
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: "SpaceGl";
+  }
+
+}
+
+//Resume Page
+
+.resume-heading{
+  
+  display: block;
+  height: 100px;
+  
+  h1{
+    float: left;
+    font-size: 56px;
+    margin-left: 280px;
+  }
+  
+  #download{
+    float: right;
+    margin: 25px 100px 0 0;
+    @include easeOut();
+    &:hover {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+        @include easeOut();
+    }
+  }
+  
+
+}
+
+.containerr1{
+  font-family: "SpaceG";
+  float: left;
+  width: 600px;
+  margin-left: 280px;
+ .worktitle{
+   font-size: 30px;
+   font-family: "SpaceGb";
+   margin: 15px 0 15px 0;
+ }
+ .jobtitle{
+  display: flex;
+  justify-content: space-between;
+  
+  }
+ 
+ h4{
+   margin:5px 0 5px 0;
+   font-size: 21px;
+   font-family: "SpaceG";
+ }
+ h3{
+  margin:5px 0 5px 0;
+  font-size: 17px;
+  font-family: "SpaceG";
+}
+ p{
+   font-size: 18px;
+   margin: 5px 0 25px 0;
+   
+ }
+  
+}
+.containerr2{
+  float: right;
+  padding-right: 100px;
+
+  .worktitle{
+    font-size: 32px;
+    font-family: "SpaceGb";
+    margin: 15px 0 15px 0;
+  }
+  
+  h4{
+    margin:5px 0 5px 0;
+    font-size: 20px;
+    font-family: "SpaceG";
+  }
+  p{
+    font-family: "SpaceG";
+    font-size: 18px;
+    margin: 0;
+    
+  }
+}
+
+
+//Project Page(Work Page)
+
+.containerw1{
+  font-family: "SpaceG";
+  display: flex;
+  margin:30px 0 30px 260px;
+  .work{
+    pointer-events: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    margin: 20px;
+    width: 380px;
+    height: 230px;
+    @include easeOut();
+    &:hover {
+      margin-left: 17px;
+      margin-right: 23px;
+      @include easeOut();
+    }
+    h5{
+      font-size: 25px;
+      margin: 20px 20px 30px 20px;
+    }
+    p{
+      font-size: 18px;
+      margin: 20px 20px 50px 20px;
+    }
+    a{
+      pointer-events: auto;
+      font-size: 15px;
+      float: right;
+      bottom: 0;
+      margin-right: 20px;
+      @include easeOut();
+      &:hover {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+        @include easeOut();
+      }
+    }
+    
+  }
+}
+.containerw2{
+  font-family: "SpaceG";
+  display: flex;
+  margin-left: 260px;
+  pointer-events: none;
+  .work{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    margin: 20px;
+    width: 380px;
+    height: 230px;
+    @include easeOut();
+    &:hover {
+      margin-left: 17px;
+      margin-right: 23px;
+      @include easeOut();
+    }
+  }
+  h5{
+    font-size: 25px;
+    margin: 20px 20px 30px 20px;
+  }
+  p{
+    font-size: 18px;
+    margin: 20px 20px 50px 20px;
+  }
+  a{
+    font-size: 15px;
+    float: right;
+    margin-right: 20px;
+    pointer-events: auto;
+    @include easeOut();
+    &:hover {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+      @include easeOut();
+    }
+  }
+}
+
+//About Page
+
+.about,.about2,.about3{
+  background: #767676;
+  margin: 20px;
+  height: 95vh;
+}
+
+.about-heading{
+  
+  margin-left: 280px;
+  font-size: 56px;
+  #download{
+    float: right;
+    margin: 10px 100px 0 0;
+    @include easeOut();
+    &:hover {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+        @include easeOut();
+    }
+  }
+  
+
+}
+
+.box{
+  margin-right: 45px;
+}
+
+.split{
+  display: flex;
+  margin: 30px;
+}
+
+.bio{
+  margin-left: 250px;
+  font-family: "SpaceG";
+  font-size: 19px;
+  p{
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.image-info{
+  margin-right: 250px;
+  margin-left: 110px;
+
+}
+
+
+//Contact Page
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+
+}
+
+.aboutc{
+  background-color: $primary-color;
+}
+.mailbot{
+  font-family: 'SpaceG';
+  position: absolute;
+  margin-top: 30px;
+  left: 281px;
+  
+  a{
+    font-family: 'SpaceGb';
+    font-weight: bold;
+  }
+}
+
+.form-style-1 {
+	margin-left: 260px;
+	max-width: 745px;
+	padding: 5px 12px 10px 25px;
+  font-family: 'SpaceG';
+  line-height: 1;
+
+  li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 20px 0 0 0;
+  }
+  li#pp{
+    margin: 0;
+  }
+
+  label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-size: 16px;
+  }
+  input,textarea{
+    
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    background-color: black;
+    color: white;
+    height: 50px;
+  }
+  input#button{
+    border: 2px solid #f1f1f1;
+    border-radius: 5px;
+    width: 160px;
+    height: 45px;
+    font-size: 17px;
+    cursor: pointer;
+    @include easeOut();
+    &:hover {
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9);
+      @include easeOut();
+    }
+    
+  }
+  .field-long{
+    width: 100%;
+  }
+  .field-divided{
+    width: 49.5%;
+  }
+  textarea{
+    height: 150px;
+    max-height: 200px;
+    min-height: 100px;
+    min-width: 715px;
+    max-width: 715px;
+  }
+
+  .pmfirst{
+    display: none;
+  }
+
+  .pfirst,.psecond{
+    font-size: 11px;
+    display: inline-block;
+    width: 49%;
+  }
+  
+  .sentb{
+      width:35%;
+  }
+  #simpleToast {
+    visibility: hidden; 
+    min-width: 30px; 
+    margin-top: 3px;
+    background-color: white;
+    color: black; 
+    text-align: center; 
+    border-radius: 6px; 
+    padding: 13px; 
+    z-index: 1; 
+    font-family: "SpaceG";
+    float: right;
+
+  }
+  #simpleToast span {
+    padding-top: 0px;
+  }
+  
+  /* Show the SIMPLE-TOAST when clicking on a button (class added with JavaScript) */
+  #simpleToast.show {
+    visibility: visible; /* Show the SIMPLE-TOAST */
+    /* Add animation: Take 0.5 seconds to fade in and out the SIMPLE-TOAST.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the SIMPLE-TOAST in and out */
+  @-webkit-keyframes fadein {
+    from {left: 0; opacity: 0;}
+    to {left: 30%; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {left: 0; opacity: 0;}
+    to {left: 30%; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {left: 0; opacity: 1;}
+    to {bottom: 130px; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 135px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+
+}
+
+@import "mobile";

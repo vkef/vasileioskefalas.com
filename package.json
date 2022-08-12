@@ -1,0 +1,17 @@
+{
+  "name": "modern_portofolio",
+  "version": "1.0.0",
+  "description": "Responsive Portofolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Vasileios Kefalas",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  }
+}
